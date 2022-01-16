@@ -5,7 +5,7 @@ import {
   Room,
   EmojiEmotions,
   Cancel,
-} from '@material-ui/icons';
+} from '@mui/icons-material';
 import { useContext, useRef, useState } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import { axiosInstance } from '../../config';
