@@ -8,7 +8,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const multer = require('multer');
 const path = require('path');
-const userRoute = require('./routes/Users');
+const userRoute = require('./routes/users');
 const authRoute = require('./routes/auth');
 const postsRoute = require('./routes/posts');
 
