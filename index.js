@@ -23,7 +23,7 @@ async function main() {
     console.log('connected to mongoDb');
   });
 }
-app.use('/images', express.static(path.join(__dirname, 'public/images')));
+app.use('/images', express.static(path.join(__dirname, '/public/images')));
 
 //middleware
 app.use(express.json());
