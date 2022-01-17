@@ -1,6 +1,5 @@
 import { useContext, useRef } from 'react';
 
-import { useHistory } from 'react-router-dom';
 import './login.css';
 import { loginCall } from '../../apiCalls';
 import { AuthContext } from '../../context/AuthContext';
@@ -10,14 +9,12 @@ export default function Login() {
   const email = useRef();
   const password = useRef();
   const { isFetching, dispatch } = useContext(AuthContext);
-  const history = useHistory();
   const handleClick = (e) => {
     e.preventDefault();
     loginCall(
       { email: email.current.value, password: password.current.value },
       dispatch
     );
-    history.push('/');
   };
 
   return (
